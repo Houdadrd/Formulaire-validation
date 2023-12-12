@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    
+        label {
+            margin-top: 10px;
+        }
+
+    input[type="text"], input[type="date"], select {
+        width: 30%;
+        padding: 10px;
+        margin-top: 5px;
+        
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+
+</head>
+<body>
+    <form onsubmit="verifier()">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" placeholder="Entrer votre nom">
+        <br><br>
+        <label for="prenom">Prenom:</label>
+        <input type="text" id="prenom" placeholder="Entrer votre prenom">
+        <br><br>
+        <label for="dateN">Date Naissance:</label>
+        <input type="date" id="dateN" placeholder="Entrer votre date de naissance">
+        <br><br>
+        <input type="radio" id="dsi" required>
+        <label for="option">DSI</label>
+        <input type="radio" id="sri"required>
+        <label for="option">SRI</label>
+        <br><br>
+        <label>Langage préféré: </label>
+        <select name="option" >
+            <option>-------------------------------Selectione un choix---------------------------------</option>
+            <option value="Java">Java</option>
+            <option value="Php">Php</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Angular">Angular</option>
+            <option value="Pascal">Pascal</option>
+        </select>
+        <br><br>
+        <input type="radio" id="sexeFemme">
+        <label for="sexe">Femme</label>
+        <input type="radio"  id="sexeHomme">
+        <label for="sexe">Homme</label>
+        <br><br>
+
+        <input type="submit" value="Envoyer">
+
+    </form>
+</body>
+</html>
